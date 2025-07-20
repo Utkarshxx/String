@@ -1,0 +1,19 @@
+INPUT=["A","B","C","D","E"];
+OUTPUT=["E","D","C","B","A"];
+
+
+//LOGIC SWAP FIRST AND LAST AND INCREMENT
+
+class Solution {
+    public void reverseString(char[] s) {
+        int left=0;
+        int right=s.length-1;
+        while(left<right){
+            char temp=s[left];
+                s[left]=s[right];
+                s[right]=temp;
+                left++;
+                right--;
+        }
+    }
+}
